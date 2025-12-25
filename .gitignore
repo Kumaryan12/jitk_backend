@@ -1,85 +1,48 @@
-__pycache__/
-.venv/
-venv/
-.env
-*.log
-# --- Python ---
-__pycache__/
-*.py[cod]
-*.pyd
-*.so
-
-# --- Envs ---
-.venv/
-venv/
-.env
-.env.*
-*.env
-
-# --- Logs / temp ---
-*.log
-*.tmp
-
 # --- OS ---
 .DS_Store
 Thumbs.db
 
-# --- Jupyter ---
-.ipynb_checkpoints/
-
-# --- Build / tooling ---
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# --- DB / local data (ONLY if you store locally) ---
-*.db
-*.sqlite
-*.sqlite3
-
-# --- Uploaded/generated media (your case) ---
-*.png
-*.jpg
-*.jpeg
-*.webp
-
-# ✅ Exception: keep docs screenshots if you want
-!docs/screenshots/
-!docs/screenshots/*.png
-!docs/screenshots/*.jpg
-!docs/screenshots/*.jpeg
-
-# Python
+# --- Python ---
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-
-# Virtual environments
+*.egg-info/
 .venv/
 venv/
-ENV/
-env/
-
-# Environment files
 .env
 .env.*
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+ruff_cache/
 
-# Logs
+# --- FastAPI / logs ---
 *.log
 
-# OS / Editor
-.DS_Store
-Thumbs.db
-.vscode/
-
-# Database / local storage (if you have)
+# --- Database / local data ---
+*.db
 *.sqlite3
 data/
-storage/
 uploads/
 
-# PyMuPDF temp (rare but safe)
-*.tmp
+# --- PDFs (choose one) ---
+# If you DON'T want to upload PDFs, ignore them:
+*.pdf
+
+# If you DO want to include a sample PDF, remove the line above
+# and instead keep PDFs only in a specific folder and ignore others.
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- IDE ---
+.vscode/
+.idea/
